@@ -1,0 +1,65 @@
+Sì, se desideri inserire il link per la prenotazione sotto alla descrizione dell'hotel nella stessa pagina index.html, ecco come puoi fare:
+
+1. Posizionamento del link sotto la descrizione: Dopo la descrizione dell'hotel, puoi inserire il link che porta alla sezione di prenotazione, che potrebbe essere, per esempio, nella stessa pagina.
+
+
+
+Esempio di codice HTML completo:
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Campiello Matese</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Campiello Matese</h1>
+        <p>Benvenuti nel nostro hotel, il vostro rifugio perfetto a Campiello Matese!</p>
+    </header>
+
+    <main>
+        <!-- Sezione Descrizione dell'Hotel -->
+        <section class="hotel-description">
+            <h2>Descrizione dell'Hotel</h2>
+            <p>Il nostro hotel è situato nel pittoresco paesino di <strong>Campiello Matese</strong>, immerso nel verde delle montagne. Offriamo camere confortevoli con vista panoramica sul Lago del Matese e sulle cime circostanti. Qui troverete un ambiente accogliente dove potrete rilassarvi e godere della tranquillità della natura.</p>
+            <p>All'interno della struttura, i nostri ospiti possono godere di un'area benessere completa con <strong>spa</strong> per un totale relax: sauna, piscina coperta e massaggi rigeneranti. Ogni giorno, il nostro ristorante offre piatti tipici della cucina locale e una scelta tra <strong>pensione completa</strong> o <strong>mezza pensione</strong>, per soddisfare ogni vostra esigenza culinaria.</p>
+            <p>Che si tratti di una fuga romantica, una vacanza in famiglia o una settimana all'insegna del benessere, il nostro hotel è il posto perfetto per trascorrere momenti indimenticabili!</p>
+        </section>
+
+        <!-- Link per accedere alla sezione di Prenotazione -->
+        <section>
+            <a href="#prenotazione">Prenota la tua stanza ora</a>
+        </section>
+
+        <!-- Sezione Prenotazione -->
+        <section id="prenotazione" class="form-section">
+            <h2>Effettua la tua prenotazione</h2>
+            <form action="prenotazione.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data">Data della prenotazione:</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="orario">Orario della prenotazione:</label>
+                <input type="time" id="orario" name="orario" required>
+
+                <button type="submit">Prenota</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hotel Campiello Matese. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
+
+  
